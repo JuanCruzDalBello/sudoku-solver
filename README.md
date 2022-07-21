@@ -14,5 +14,5 @@ If the coordinates are valid the user must then declare a number from 1 to 9 to 
 
 ## Logic
 A recursive backtracking algorithm is used to solve the puzzle.
-The script identifies the next empty space on the board and iterates through all numbers from 1 to 9 until it finds a valid option to fill the space, according to the rules of sudoku, to then use recursion to do the same with the next empty space. If the script is not able to find a valid number it backtracks to the last step of the recursion, where it tries the next number.
-This continiues until there are no empty spaces left on the board
+The function the script uses to solve it identifies the next empty space on the board and iterates through all numbers from 1 to 9 until it finds a valid option to fill the space, according to the rules of sudoku, to then use recursion to do the same with the next empty space. If the script is not able to find a valid number it backtracks to the last step of the recursion, where it tries the next number.
+This continiues until there are no empty spaces left on the board, to then return True if the sudoku could be solved, or False the given board has no actual solution.
